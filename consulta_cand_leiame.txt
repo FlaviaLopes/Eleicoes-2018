@@ -1,0 +1,216 @@
+LEIA-ME:
+Este arquivo contém o leiaute das tabelas existentes no repositório de dados eleitorais. Antes de trabalhar os dados é importante ler as seguintes considerações:
+- A codificação de caracteres dos arquivos é "Latin 1";
+- Os campos estão entre aspas e separados por ponto e vírgula, inclusive os campos numéricos;
+- Campos preenchidos com #NULO significam que a informação está em branco no banco de 
+dados. O correspondente para #NULO nos campos numéricos é -1;
+- Campos preenchidos com #NE significam que naquele ano a informação não era registrada em 
+banco de dados pelos sistemas eleitorais. O correspondente para #NE nos campos numéricos é 
+-3;
+- O campo UF, além das unidades da federação pode conter alguma das seguintes situações:
+    o BR: quando se tratar de informação a nível nacional;
+    o VT: quando se tratar de voto em trânsito;
+    o ZZ: quando se tratar de Exterior.
+- Os arquivos estão em constante processo de atualização e aperfeiçoamento. Alguns arquivos 
+podem estar em branco ou com mensagem de erro devido a indisponibilidade temporária na base 
+de algum estado ou à inexistência daquele arquivo para a época pretendida.
+Agradecemos todas as críticas e sugestões recebidas de pesquisadores e usuários que estão 
+colaborando para a melhoria na qualidade da prestação das informações. Em especial à 
+Associação Brasileira de Ciência Política 
+(ABCP), que por meio de acordo de cooperação técnica firmado com o TSE está auxiliando na verificação dos arquivos gerados e informando o 
+TSE quanto às necessidades de dados dos pesquisadores.
+Qualquer sugestão ou dúvida deve ser encaminhada ao e-mail estatistica@tse.jus.br.
+2.1. Observação
+Para o caso de candidatos não divulgáveis, seus dados pessoais são preenchidos com:
+*-4, em caso de campos numéricos, exceto campo de idade;
+*"NÃO DIVULGÁVEL", em caso de campos textuais;
+*" ", no caso de campos relativos a idade do candidato e sua data de nascimento.
+
+CONSULTA_CAND
+
+NOTAÇÃO: consulta_cand_<ANO>_<UF> consulta_cand_<ANO>_BRASIL
+
+Variável Descrição
+
+DT_GERACAO:
+Data de geração do arquivo (data da extração dos dados)
+
+HH_GERACAO:
+Hora de geração do arquivo (hora da extração - Horário de Brasília).
+
+ANO_ELEICAO:
+Ano da eleição (referente ao ano eleitoral de pesquisa)
+
+CD_TIPO_ELEICAO:
+Código do tipo de eleição.
+
+NM_TIPO_ELEICAO:
+Nome do tipo de eleição.
+
+NR_TURNO:
+Número do turno da eleição.
+
+CD_ELEICAO:
+Código da eleição.
+
+DS_ELEICAO:
+Descrição da eleição.
+
+DT_ELEICAO:
+Data em que ocorreu a eleição.
+
+TP_ABRANGENCIA:
+Tipo de abrangência da eleição.
+
+SG_UF:
+Sigla da Unidade da Federação em que ocorreu a eleição.
+
+SG_UE:
+Sigla da Unidade Eleitoral do candidato (Em caso de 
+eleição majoritária é a sigla da UF que o candidato concorre 
+e em caso de eleição municipal é o código TSE do município).
+
+NM_UE:
+Nome de Unidade Eleitoral do candidato (Em caso de eleição majoritária é o nome da UF que o candidato concorre e em caso de eleição municipal é o nome do município).
+
+CD_CARGO:
+Código do cargo ao qual o candidato concorre. 
+
+DS_CARGO:
+Descrição do cargo ao qual o candidato concorre.
+
+SQ_CANDIDATO:
+Número sequencial do candidato gerado internamente pelos 
+sistemas eleitorais. Não é o número de campanha do 
+candidato. 
+
+NR_CANDIDATO:
+Número do candidato na urna.
+
+NM_CANDIDATO:
+Nome completo do candidato.
+
+NM_URNA_CANDIDATO:
+Nome de urna do candidato.
+
+NM_SOCIAL_CANDIDATO:
+Nome social do candidato.
+
+NR_CPF_CANDIDATO:
+Número do CPF do candidato.
+
+NM_EMAIL:
+Endereço de e-mail do candidato.
+
+CD_SITUACAO_CANDIDATURA:
+Código da situação do registro de candidatura do candidato.
+
+DS_SITUACAO_CANDIDATURA:
+Descrição da situação do registro de candidatura do candidato. Pode assumir os valores 'Apto' (candidato apto para ir para urna); 'Inapto' (candidato inapto para ir para urna); 'Cadastrado' (registro de candidatura realizado, mas ainda não julgado).
+
+CD_DETALHE_SITUACAO_CAND:
+Código do detalhe da situação do registro de candidatura do candidato. 
+
+DS_DETALHE_SITUACAO_CAND:
+Descrição do detalhe da situação do registro de candidatura do candidato. 
+
+TP_AGREMIACAO:
+Tipo de agremiação. Pode assumir os valores 'Coligação', quando o candidato concorre por coligação; 'Partido isolado', quando o candidato concorre somente pelo partido.
+
+NR_PARTIDO:
+Número do partido do candidato.
+
+SG_PARTIDO:
+Sigla do partido do candidato.
+
+NM_PARTIDO:
+Nome do partido do candidato.
+
+SG_LEGENDA:
+Sigla da coligação gerado pela Justiça Eleitoral, da qual o candidato pertence.
+
+SQ_COLIGACAO:
+Sequencial da coligação gerado pela Justiça Eleitoral, da qual o candidato pertence.
+
+NM_COLIGACAO:
+Nome da coligação da qual o candidato pertence.
+
+DS_COMPOSICAO_COLIGACAO:
+Descrição da composição da coligação da qual o candidato pertence.
+
+CD_NACIONALIDADE:
+Código da nacionalidade do candidato.
+
+DS_NACIONALIDADE:
+Descrição da nacionalidade do candidato.
+
+SG_UF_NASCIMENTO:
+Sigla da UF de nascimento do candidato.
+
+CD_MUNICIPIO_NASCIMENTO:
+Código TSE do município de nascimento do candidato.
+
+NM_MUNICIPIO_NASCIMENTO:
+Nome do município de nascimento do candidato.
+
+DT_NASCIMENTO:
+Data de nascimento do candidato.
+
+NR_IDADE_DATA_POSSE:
+Idade do candidato na data da posse. Consultar a data da posse para cada cargo e unidade eleitoral nos arquivos de vagas.
+
+NR_TITULO_ELEITORAL_CANDIDATO:
+Número do título eleitoral do candidato.
+
+CD_GENERO:
+Código do gênero do candidato.
+
+DS_GENERO:
+Descrição do gênero do candidato.
+
+CD_GRAU_INSTRUCAO:
+Código do grau de instrução do candidato.
+
+DS_GRAU_INSTRUCAO:
+Descrição do grau de instrução do candidato.
+
+CD_ESTADO_CIVIL:
+Código do estado civil do candidato.
+
+DS_ESTADO_CIVIL:
+Descrição do estado civil do candidato.
+
+CD_COR_RACA:
+Código da cor/raça do candidato (auto declaração).
+
+DS_COR_RACA:
+Descrição da cor/raça do candidato (auto declaração).
+
+CD_OCUPACAO:
+Código da ocupação do candidato.
+
+DS_OCUPACAO:
+Descrição da ocupação do candidato.
+
+VR_MAX_DESPESA_CAMPANHA:
+Despesa máxima de campanha declarada pelo partido para aquele cargo, em reais. Os valores máximos para candidatos a vice e suplentes serão incluídos nos valores indicados para os titulares.Quando não informado o valor será -1.
+
+CD_SIT_TOT_TURNO:
+Código da situação de totalização do candidato naquele turno.
+
+DS_SIT_TOT_TURNO:
+Descrição da situação de totalização do candidato naquele turno.
+
+ST_REELEICAO:
+O indicativo de que o candidato está concorrendo ou não à reeleição. Pode assumir os valores 'S' para 'Sim' e 'N' para 'Não'. Apenas para os cargos de presidente, governador e prefeito é possível a candidatura à reeleição.
+
+ST_DECLARAR_BENS:
+O indicativo de que o candidato tem ou não bens a declarar. Pode assumir os valores 'S', em caso positivo, e 'N'.
+
+NR_PROTOCOLO_CANDIDATURA:
+Número do protocolo de registro de candidatura do candidato. 
+
+NR_PROCESSO:
+Número do processo de registro de candidatura do candidato.
+
+Fonte: http://agencia.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2018.zip

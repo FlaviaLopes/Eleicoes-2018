@@ -1,0 +1,96 @@
+LEIA-ME:
+Este arquivo contém o leiaute das tabelas existentes no repositório de dados eleitorais. Antes de trabalhar os dados é importante ler as seguintes considerações:
+- A codificação de caracteres dos arquivos é "Latin 1";
+- Os campos estão entre aspas e separados por ponto e vírgula, inclusive os campos numéricos;
+- Campos preenchidos com #NULO significam que a informação está em branco no banco de 
+dados. O correspondente para #NULO nos campos numéricos é -1;
+- Campos preenchidos com #NE significam que naquele ano a informação não era registrada em 
+banco de dados pelos sistemas eleitorais. O correspondente para #NE nos campos numéricos é 
+-3;
+- O campo UF, além das unidades da federação pode conter alguma das seguintes situações:
+    o BR: quando se tratar de informação a nível nacional;
+    o VT: quando se tratar de voto em trânsito;
+    o ZZ: quando se tratar de Exterior.
+- Os arquivos estão em constante processo de atualização e aperfeiçoamento. Alguns arquivos 
+podem estar em branco ou com mensagem de erro devido a indisponibilidade temporária na base 
+de algum estado ou à inexistência daquele arquivo para a época pretendida.
+Agradecemos todas as críticas e sugestões recebidas de pesquisadores e usuários que estão 
+colaborando para a melhoria na qualidade da prestação das informações. Em especial à 
+Associação Brasileira de Ciência Política 
+(ABCP), que por meio de acordo de cooperação técnica firmado com o TSE está auxiliando na verificação dos arquivos gerados e informando o 
+TSE quanto às necessidades de dados dos pesquisadores.
+Qualquer sugestão ou dúvida deve ser encaminhada ao e-mail estatistica@tse.jus.br.
+
+BEM_CANDIDATO
+
+NOTAÇÃO:BEM_CANDIDATO_<ANOELEIÇÃO>_<SIGLAUF>
+
+Variável Descrição
+
+DT_GERACAO:
+Data de geração do arquivo (data da extração dos 
+dados).
+
+HH_GERACAO:
+Hora de geração do arquivo (hora da extração) - Horário de Brasília.
+
+ANO_ELEICAO:
+Ano da eleição (referente ao ano eleitoral de pesquisa)
+
+CD_TIPO_ELEICAO:
+Código do tipo de eleição.
+
+NM_TIPO_ELEICAO:
+Nome do tipo de eleição.
+
+CD_ELEICAO:
+Código da eleição. 
+
+DS_ELEICAO:
+Descrição da eleição.
+
+DT_ELEICAO:
+Data em que ocorreu a eleição.
+
+SG_UF:
+Sigla da Unidade da Federação em que ocorreu a eleição.
+
+SG_UE:
+Sigla da Unidade Eleitoral do candidato (Em caso de 
+eleição majoritária é a sigla da UF que o candidato concorre 
+e em caso de eleição municipal é o código TSE do 
+município). 
+
+NM_UE:
+Nome de Unidade Eleitoral do candidato (Em caso de 
+eleição majoritária é o nome da UF que o candidato 
+concorre e em caso de eleição municipal é o nome do 
+município).
+
+SQ_CANDIDATO:
+Número sequencial do candidato gerado internamente pelos 
+sistemas eleitorais. Não é o número de campanha do 
+candidato.
+
+NR_ORDEM_CANDIDATO:
+Número da ordem do bem declarado do candidato.
+
+CD_TIPO_BEM_CANDIDATO:
+Código do tipo do bem do candidato.
+
+DS_TIPO_BEM_CANDIDATO:
+Descrição do tipo do bem do candidato.
+
+DS_BEM_CANDIDATO:
+Descrição detalhada do bem do candidato.
+
+VR_BEM_CANDIDATO:
+Valor declarado em reais do bem do candidato.
+
+DT_ULTIMA_ATUALIZACAO:
+Data da última atualização do registro do bem.
+
+HH_ULTIMA_ATUALIZACAO:
+Hora da última atualização do registro do bem.
+
+Fonte: http://agencia.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2018.zip
