@@ -213,4 +213,22 @@ Número do protocolo de registro de candidatura do candidato.
 NR_PROCESSO:
 Número do processo de registro de candidatura do candidato.
 
+CD_SITUACAO_CANDIDATO_PLEITO:
+Esta variável não foi citada no dicionário de dados fornecido pelo repositório de dados eleitoral do TSE.
+
+CD_SITUACAO_CANDIDATO_URNA:
+Esta variável não foi citada no dicionário de dados fornecido pelo repositório de dados eleitoral do TSE.
+
+DS_SITUACAO_CANDIDATO_PLEITO:
+Esta variável não foi citada no dicionário de dados fornecido pelo repositório de dados eleitoral do TSE.
+
+DS_SITUACAO_CANDIDATO_URNA:
+Esta variável não foi citada no dicionário de dados fornecido pelo repositório de dados eleitoral do TSE.
+
+NR_DESPESA_MAX_CAMPANHA:
+Esta variável não foi citada no dicionário de dados fornecido pelo repositório de dados eleitoral do TSE.
+
+ST_CANDIDATO_INSERIDO_URNA:
+Esta variável não foi citada no dicionário de dados fornecido pelo repositório de dados eleitoral do TSE.
+
 Fonte: http://agencia.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2018.zip
